@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifya0d2545d68724-staging-203605-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654603428:role/amplify-amplifya0d2545d68724-staging-203605-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654603428:role/amplify-amplifya0d2545d68724-staging-203605-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifya0d2545d68724-staging-203605-deployment",
+      "UnauthRoleName": "amplify-amplifya0d2545d68724-staging-203605-unauthRole",
+      "StackName": "amplify-amplifya0d2545d68724-staging-203605",
+      "StackId": "arn:aws:cloudformation:us-east-2:654654603428:stack/amplify-amplifya0d2545d68724-staging-203605/878b0dd0-bc8a-11ee-a28e-0aaaeaeaf601",
+      "AmplifyAppId": "d3l2ud0wq9dtq3"
+    },
+    "categories": {
+      "auth": {
+        "charlespedersoncom0bc22631": {}
+      }
+    }
+  }
+}
