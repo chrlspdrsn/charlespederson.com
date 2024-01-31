@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -24,8 +24,16 @@
   color: white;
 }
 
-.App-link {
+.App-card {
+  display: flex;
+}
+
+.navbar {
   color: #61dafb;
+  display: flex;
+  max-width: 300px;
+  min-width: 250px;
+  justify-content: space-between;
 }
 
 @keyframes App-logo-spin {

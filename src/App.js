@@ -1,25 +1,42 @@
-import logo from "./logo.svg";
 import "@aws-amplify/ui-react/styles.css";
-import {
-  withAuthenticator,
-  Button,
-  Heading,
-  Image,
-  View,
-  Card,
-} from "@aws-amplify/ui-react";
+import { Heading, View, Card, } from "@aws-amplify/ui-react";
 
-function App({ signOut }) {
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Error from "./pages/Error";
+
+function App() {
+  let Component;
+
+  switch(window.location.pathname) {
+    case "/":
+      Component = Home;
+      break;
+    case "/contact":
+      Component = Contact;
+      break;
+    case "/projects":
+      Component = Projects;
+      break;
+    default:
+      Component = Error;
+      break;
+  }
+
   return (
-    <View className="App">
-      <Card>
-        <Image src={logo} className="App-logo" alt="logo" />
-        <Heading level={1}>Charles Pederson</Heading>
-        <Heading level={2}>Innovative. Passionate. Driven.</Heading>
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
+    <div>
+      <View className="App">
+        <Card>
+          <Heading level={1}>Charles Pederson</Heading>
+          <Heading level={2}>Innovative. Passionate. Driven.</Heading>
+          <NavBar />
+        </Card>
+        <Component />
+      </View>
+    </div>
   );
 }
 
-export default withAuthenticator(App);
+export default App;
