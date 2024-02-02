@@ -2,6 +2,8 @@ import { Card, Divider, Flex, Grid, Heading, Image, Text, View, useTheme } from 
 import { RiCheckDoubleFill, RiComputerFill } from "react-icons/ri";
 import { GiBrain } from "react-icons/gi";
 import React from 'react';
+import QuoteCarousel from '../components/QuoteCarousel';
+import jsonData from '../json/quotes.json';
 
 const Home = () => {
     const {tokens} = useTheme();
@@ -15,6 +17,12 @@ const Home = () => {
             >
                 <View columnSpan={2}>
                     <Image className="App-image" src={require("../images/profile.jpg")}/>
+                </View>
+                <View columnSpan={2} className="App-quote-box">
+                    <QuoteCarousel data={jsonData}/>
+                </View>
+                <View columnSpan={2}>
+                    <Divider />
                 </View>
                 <View rowSpan={2}>
                     <Flex alignItems="center">
