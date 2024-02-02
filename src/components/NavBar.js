@@ -4,7 +4,7 @@ import "../App.css"
 
 export default function NavBar() {
     return <div>
-        <Card className="navbar">
+        <Card className="App-navbar">
             <Link
                 href="/"
                 color=""

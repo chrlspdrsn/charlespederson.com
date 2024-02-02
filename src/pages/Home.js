@@ -14,7 +14,7 @@ const Home = () => {
                 gap={ tokens.space.small }
             >
                 <View columnSpan={2}>
-                    <Image src={require("../images/charlesPederson.jpg")}/>
+                    <Image className="App-image" src={require("../images/profile.jpg")}/>
                 </View>
                 <View rowSpan={2}>
                     <Flex alignItems="center">
