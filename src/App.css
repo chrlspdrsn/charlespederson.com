@@ -5,6 +5,62 @@
 .App-image {
   height: auto;
   max-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.App-header {
+  position: relative;
+}
+
+.App-header-content {
+  height: auto;
+  width: fit-content;
+  position: absolute;
+  left:7%;
+  bottom: 15%;
+}
+
+@media only screen and (max-width: 700px) {
+  .App-header-content {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+
+    h1 {
+      font-size: xx-large;
+    }
+    h2 {
+      font-size: x-large;
+    }
+  }
+
+  .App-navbar {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .App-header-content {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+
+    h1 {
+      font-size: x-large;
+    }
+    h2 {
+      font-size: large;
+    }
+  }
+
+  .App-navbar {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: small;
+  }
 }
 
 .App-navbar {
@@ -13,6 +69,7 @@
   max-width: 300px;
   min-width: 250px;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 .App-quote-box {
@@ -26,6 +83,7 @@
     max-width: 75%;
     margin: auto;
     display: block;
+    width: 60rem;
   }
 }
 

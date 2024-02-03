@@ -1,5 +1,5 @@
 import "@aws-amplify/ui-react/styles.css";
-import { Heading, View, Card, } from "@aws-amplify/ui-react";
+import { Image, Heading, View, Card, } from "@aws-amplify/ui-react";
 
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
@@ -28,11 +28,14 @@ function App() {
   return (
     <div>
       <View className="App">
-        <Card>
-          <Heading level={1}>Charles Pederson</Heading>
-          <Heading level={2}>Innovative. Passionate. Driven.</Heading>
-          <NavBar />
-        </Card>
+        <View className="App-header">
+          <Image src={require("./images/header.jpg")} className="App-image"/>
+          <Card className="App-header-content">
+            <Heading level={1}>Charles Pederson</Heading>
+            <Heading level={2}>Innovative. Passionate. Driven.</Heading>
+            <NavBar />
+          </Card>
+        </View>
         <Component />
       </View>
     </div>

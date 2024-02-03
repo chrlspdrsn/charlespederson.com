@@ -15,9 +15,6 @@ const Home = () => {
                 tempalteRows="10rem 10rem 10rem"
                 gap={ tokens.space.small }
             >
-                <View columnSpan={2}>
-                    <Image className="App-image" src={require("../images/profile.jpg")}/>
-                </View>
                 <View columnSpan={2} className="App-quote-box">
                     <QuoteCarousel data={jsonData}/>
                 </View>
