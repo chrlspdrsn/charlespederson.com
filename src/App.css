@@ -2,6 +2,21 @@
   text-align: left;
 }
 
+.App-content {
+  p {
+    padding-bottom: 1rem;
+  }
+
+  h3 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  
+  hr {
+    padding-top: 1.5rem;
+  }
+}
+
 .App-image {
   height: auto;
   max-width: 100%;

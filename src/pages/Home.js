@@ -9,20 +9,17 @@ const Home = () => {
 
     return (
         <Card>
-            <Grid
-                templateColumns="1fr 1fr"
-                tempalteRows="10rem 10rem 10rem"
-                gap={ tokens.space.small }
-            >
-                <View columnSpan={2} className="App-quote-box">
-                    <QuoteCarousel data={jsonData}/>
-                </View>
-                <View columnSpan={2}>
+            <View className="App-quote-box">
+                <QuoteCarousel data={jsonData}/>
+            </View>
+
+            <div className="App-content">
+                <View>
                     <Divider />
                 </View>
 
                 {mainContent.map((content, index) => <>
-                    <View rowSpan={2}>
+                    <View>
                         <Heading level={3}>{content.heading}</Heading>
                     </View>
                     <View>
@@ -32,7 +29,7 @@ const Home = () => {
                         <Text>{content.second}</Text>
                     </View>
                 </>)}
-            </Grid>
+            </div>
         </Card>
     );
 }
