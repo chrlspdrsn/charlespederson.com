@@ -1,10 +1,10 @@
 import { Card, Divider, Flex, Grid, Heading, Image, Text, View, useTheme } from '@aws-amplify/ui-react';
 import React from 'react';
-import QuoteCarousel from '../components/QuoteCarousel';
+import QuoteCarousel from './QuoteCarousel';
 import jsonData from '../json/quotes.json';
 import mainContent from '../json/mainContent.json';
 
-const Home = () => {
+const About = () => {
     const {tokens} = useTheme();
 
     return (
@@ -34,4 +34,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default About;
