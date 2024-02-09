@@ -27,17 +27,17 @@ function App() {
 
   return (
     <div>
-      <View className="App">
+      <NavBar />
+      {/* <View className="App">
         <View className="App-header">
           <Image src={require("./images/header.jpg")} className="App-image"/>
           <Card className="App-header-content">
             <Heading level={1}>Charles Pederson</Heading>
             <Heading level={2}>Innovative. Passionate. Driven.</Heading>
-            <NavBar />
           </Card>
         </View>
         <Component />
-      </View>
+      </View> */}
     </div>
   );
 }
