@@ -1,7 +1,7 @@
 import React from 'react';
 import "../styles/NavBar.css";
 import logo from "../images/logo.png";
-import contactImg from "../images/contact.png";
+import contactImg from "../images/icons/contact.png";
 
 import { Link } from '@aws-amplify/ui-react';
 

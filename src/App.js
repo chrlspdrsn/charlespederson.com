@@ -10,6 +10,7 @@ function App() {
     <div>
       <NavBar />
       <Home />
+      <About />
       {/* <View className="App">
         <View className="App-header">
           <Image src={require("./images/header.jpg")} className="App-image"/>

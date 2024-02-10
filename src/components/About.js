@@ -1,36 +1,35 @@
 import { Card, Divider, Flex, Grid, Heading, Image, Text, View, useTheme } from '@aws-amplify/ui-react';
 import React from 'react';
 import QuoteCarousel from './QuoteCarousel';
-import jsonData from '../json/quotes.json';
+import quoteData from '../json/quotes.json';
 import mainContent from '../json/mainContent.json';
+import "../styles/About.css"
+import customer from "../images/icons/customer.png"
 
 const About = () => {
     const {tokens} = useTheme();
 
     return (
-        <Card>
-            <View className="App-quote-box">
-                <QuoteCarousel data={jsonData}/>
-            </View>
+        <section id="about">
+            <span className="aboutTitle">Who am I?</span>
 
-            <div className="App-content">
-                <View>
-                    <Divider />
-                </View>
-
-                {mainContent.map((content, index) => <>
-                    <View>
-                        <Heading level={3}>{content.heading}</Heading>
-                    </View>
-                    <View>
-                        <Text>{content.first}</Text>
-                    </View>
-                    <View>
-                        <Text>{content.second}</Text>
-                    </View>
-                </>)}
+            <div className="aboutBars">
+                {mainContent.map((content, index) => {
+                    return (
+                        <div className="aboutBar">
+                            <img src={customer} alt={content.iconAlt} className="aboutImage"/>
+                            <div className="aboutBarText">
+                                <h2 className="aboutSubTitle">{content.heading}</h2>
+                                <p className="aboutContent">
+                                    {content.first} <br/><br/>
+                                    {content.second}
+                                </p>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
-        </Card>
+        </section>
     );
 }
 
