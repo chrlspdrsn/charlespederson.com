@@ -29,6 +29,8 @@ const About = () => {
                     )
                 })}
             </div>
+
+            <QuoteCarousel data={quoteData}/>
         </section>
     );
 }
