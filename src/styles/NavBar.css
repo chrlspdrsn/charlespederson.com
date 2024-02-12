@@ -12,6 +12,12 @@
     max-width: 80%
 }
 
+.navBarFull {
+    background-color: #031526;
+    position: sticky;
+    top: 0;
+}
+
 .logo {
     object-fit: cover;
     height: 3rem;
@@ -21,7 +27,7 @@
 .desktopMenuLinkItem {
     margin: 1rem;
     cursor: pointer;
-    color: #0a5394;
+    color: #0b5da6;
 }
 
 .desktopMenuLinkItem:hover {

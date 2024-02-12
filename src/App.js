@@ -1,5 +1,5 @@
 import "@aws-amplify/ui-react/styles.css";
-import { Image, Heading, View, Card, } from "@aws-amplify/ui-react";
+import "./App.css";
 
 import NavBar from "./components/NavBar";
 import About from "./components/About";
@@ -10,7 +10,9 @@ function App() {
     <div>
       <NavBar />
       <Home />
-      <About />
+      <div className="App-main-content">
+        <About />
+      </div>
       {/* <View className="App">
         <View className="App-header">
           <Image src={require("./images/header.jpg")} className="App-image"/>

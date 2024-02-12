@@ -6,7 +6,7 @@ import contactImg from "../images/icons/contact.png";
 import { Link } from '@aws-amplify/ui-react';
 
 export default function NavBar() {
-    return <div>
+    return <div className="navBarFull">
         <nav className="navBar">
             <img src={logo} alt="Logo written C P" className="logo" />
             <div className="desktopMenu">
