@@ -1,0 +1,55 @@
+#projects {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.projectsTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.projectsDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    max-width: 60%;
+}
+
+.projectImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+}
+
+.projectImage {
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.projectsButton {
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: white;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 585px) {
+    .projectImage {
+        height: 50vw;
+    }
+}
