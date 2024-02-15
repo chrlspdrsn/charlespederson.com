@@ -14,25 +14,25 @@ const Resume = () => {
                     <h3 className="resumeSubhead">2021 to Present</h3>
                 </div>
 
-                <h3 className="resumeJobTitle">Consultant (2023 to Present)</h3>
+                <h3 className="resumeJobTitle">Software Engineer/Consultant (2023 to Present)</h3>
                 <ul className="resumeDescription">
-                    <li className="resumePoint"></li>
-                    <li className="resumePoint"></li>
-                    <li className="resumePoint"></li>
+                    <li className="resumePoint">Develop more advanced and complex software systems using Java microservices such as RESTful Web Services and APIs, React, Docker, Oracle database and more</li>
+                    <li className="resumePoint">Thoroughly analyze software bugs using Linux to determine root causes of errors, including log analysis and debugging</li>
+                    <li className="resumePoint">Mentor and train associate consultants on best practices for software development, maintaining clean code, SDLC best practices and managing customer interactions and collaboration</li>
                 </ul>
 
-                <h3 className="resumeJobTitle">Associate Consultant (2021-2022)</h3>
+                <h3 className="resumeJobTitle">Associate Software Engineer/Consultant (2021-2022)</h3>
                 <ul className="resumeDescription">
-                    <li className="resumePoint"></li>
-                    <li className="resumePoint"></li>
-                    <li className="resumePoint"></li>
+                    <li className="resumePoint">Developed custom software solutions using Java and Java technologies such as JSP, MySQL, Jenkins and Git tailored to specific customer needs</li>
+                    <li className="resumePoint">Work alongside team of 20 in SDLC process using Agile development methodology ensuring strong communication, both written and verbal, internally and with customers</li>
+                    <li className="resumePoint">Design and test software solutions alongside other developers to ensure quality, dependable and readable code for purposes of scalability and performance</li>
                 </ul>
 
                 <h3 className="resumeJobTitle">Software Engineering Intern (2021)</h3>
                 <ul className="resumeDescription">
-                    <li className="resumePoint"></li>
-                    <li className="resumePoint"></li>
-                    <li className="resumePoint"></li>
+                    <li className="resumePoint">Use Git, Java, JSP technology to develop efficient and high-quality code emphasizing web software and client-server communication</li>
+                    <li className="resumePoint">Learn industry standards for SDLC process as well as Agile development, software development best practices, and professionalism concepts</li>
+                    <li className="resumePoint">Shadow senior developers on a customer project and assist with code development that was used in final project for client</li>
                 </ul>
             </div>
             <div className="resumeSection">
