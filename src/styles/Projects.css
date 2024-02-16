@@ -40,6 +40,14 @@
     border-style: solid;
     border-width: 0.5rem;
     border-color: #041f38;
+    transition: 200ms;
+}
+
+.projectImage:hover {
+    border-style: none;
+    transition: 200ms;
+    margin: 0.25rem;
+    cursor: pointer;
 }
 
 .projectsButton {
@@ -51,8 +59,79 @@
     margin: 1rem 0;
 }
 
+.modalBox {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    min-height: 25vh;
+    background-color: #0b5da6;
+    border: 2px solid #041f38;
+    border-radius: 2rem;
+    animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+.exit-button {
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#modal-modal-title {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #0a9490;
+}
+
+#modal-modal-description {
+    padding: 0 1rem;
+    font-weight: 300;
+    font-size: 1rem;   
+}
+
+#modal-modal-footer {
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.technologyTitle {
+    font-weight: 300;
+    font-size: 1.75rem;
+}
+
+.technologyItem {
+    font-weight: 250;
+    font-size: 1.5rem;
+}
+
 @media screen and (max-width: 585px) {
     .projectImage {
         height: 50vw;
+    }
+
+    .modalBox {
+        min-width: 75vw;
+        scroll-behavior: smooth;
+    }
+
+    #modal-modal-title {
+        font-size: 1.5rem;
+    }
+
+    .exit-button {
+        padding: 0.5rem;
+    }
+
+    .technologyTitle {
+        font-size: 1.25rem;
+        padding: 0.25rem;
+    }
+
+    .technologyItem {
+        font-weight: 250;
+        font-size: 1rem;
     }
 }
