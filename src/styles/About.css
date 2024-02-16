@@ -13,8 +13,8 @@
 .aboutTitle {
     font-size: 3rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
     color: white;
+    padding-top: 1rem;
 }
 
 .aboutSubTitle {
@@ -59,6 +59,13 @@
 }
 
 @media screen and (max-width: 1250px) {
+    .aboutBars {
+        max-width: 85%;
+    }
+    .aboutBar {
+        padding: 1.25rem 1.75rem;
+        margin: 0.5rem;
+    }
     .aboutImage {
         height: 7.5rem;
     }
@@ -74,11 +81,19 @@
         margin: 0;
         max-width: 100%;
     }
+    .aboutBars {
+        max-width: 90%;
+    }
     .aboutBar {
         flex-direction: column;
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0.5rem;
     }
     .aboutImage {
         margin-right: 0rem;
+    }
+    .aboutTitle {
+        margin: 0;
     }
     .aboutSubTitle {
         font-size: 1.5rem;
