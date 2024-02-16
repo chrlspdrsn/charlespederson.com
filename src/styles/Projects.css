@@ -107,9 +107,33 @@
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+    .projectsDesc {
+        max-width: 80%;
+    }
+    
+    #modal-modal-description {
+        max-height: 20rem;
+        overflow-y: scroll;
+    }
+
+    #modal-modal-description::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #modal-modal-description {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+}
+
 @media screen and (max-width: 585px) {
     .projectImage {
         height: 50vw;
+    }
+
+    .projectsDesc {
+        max-width: 100%;
     }
 
     .modalBox {
