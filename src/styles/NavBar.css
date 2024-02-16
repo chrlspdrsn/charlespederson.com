@@ -9,13 +9,15 @@
     position: sticky;
     top: 0;
     z-index: 3;
-    max-width: 80%
+    max-width: 100%;
+    background-color: #031526;
 }
 
 .navBarFull {
     background-color: #031526;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -52,4 +54,69 @@
     height: 1rem;
     width: auto;
     margin: 1rem;
+}
+
+.mobileMenuIcon {
+    display: none;
+    object-fit: cover;
+    height: 2rem;
+    padding: 0.25rem;
+    background-color: #031526;
+    margin: 0.5rem;
+    position: sticky;
+}
+
+.active {
+    color: #0a9490;
+}
+
+.mobileMenuNav {
+    display: none;
+    z-index: 3;
+}
+
+.navMenu {
+    position: absolute;
+    top: 2.75rem;
+    right: 0.25rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background-color: #031526;
+    border-radius: 1rem;
+}
+
+.mobileMenuLinkItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    cursor: pointer; 
+}
+
+@media screen and (max-width: 800px) {
+    .mobileMenuIcon {
+        display: flex;
+    }
+
+    .mobileMenuNav {
+        display: flex;
+        justify-content: right;
+        position: sticky;
+        top: 0;
+    }
+
+    .navbarFull {
+        opacity: 0%;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    .desktopButton {
+        display: none;
+    }
 }

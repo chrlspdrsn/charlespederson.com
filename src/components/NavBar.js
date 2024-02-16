@@ -1,25 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../styles/NavBar.css";
 import logo from "../images/logo.png";
 import contactImg from "../images/icons/contact.png";
-
-import { Link } from '@aws-amplify/ui-react';
+import menuBar from "../images/icons/menuBar.png";
+import { Link } from 'react-scroll';
 
 export default function NavBar() {
-    return <div className="navBarFull">
+    const [showMenu, setShowMenu] = useState(false);
+
+    return (
+        <>
         <nav className="navBar">
             <img src={logo} alt="Logo written C P" className="logo" />
             <div className="desktopMenu">
-                <Link className="desktopMenuLinkItem">Home</Link>
-                <Link className="desktopMenuLinkItem">About</Link>
-                <Link className="desktopMenuLinkItem">Projects</Link>
-                <Link className="desktopMenuLinkItem">Resume</Link>
+                <Link activeClass="active" to="home" spy={ true } smooth={true} offset={-115} duration={500} className="desktopMenuLinkItem">Home</Link>
+                <Link activeClass="active" to="about" spy={ true } smooth={true} offset={-100} duration={500} className="desktopMenuLinkItem">About</Link>
+                <Link activeClass="active" to="projects" spy={ true } smooth={true} offset={-100} duration={500} className="desktopMenuLinkItem">Projects</Link>
+                <Link activeClass="active" to="resume" spy={ true } smooth={true} offset={-100} duration={500} className="desktopMenuLinkItem">Resume</Link>
             </div>
-            
-            <button className="desktopButton">
+
+            <button className="desktopButton" onClick={() => {
+                //document.getElementById("resume").scrollIntoView( {behavior: 'smooth'} );
+            }}>
                 <img src={contactImg} alt="" className="desktopMenuImage" />
                 Contact Me
             </button>
         </nav>
-    </div>
+        <nav className="mobileMenuNav">
+            <img src={menuBar} alt="Mobile View menu bar" className="mobileMenuIcon" onClick={()=>setShowMenu(!showMenu)}/>
+            <div className="navMenu" style={{display: showMenu ? 'flex' : 'none'}}>
+                <Link activeClass="active" to="home" spy={ true } smooth={true} offset={0} duration={500} className="mobileMenuLinkItem" onClick={() => setShowMenu(false)}>Home</Link>
+                <Link activeClass="active" to="about" spy={ true } smooth={true} offset={0} duration={500} className="mobileMenuLinkItem" onClick={() => setShowMenu(false)}>About</Link>
+                <Link activeClass="active" to="projects" spy={ true } smooth={true} offset={0} duration={500} className="mobileMenuLinkItem" onClick={() => setShowMenu(false)}>Projects</Link>
+                <Link activeClass="active" to="resume" spy={ true } smooth={true} offset={0} duration={500} className="mobileMenuLinkItem" onClick={() => setShowMenu(false)}>Resume</Link>
+            </div>
+        </nav>
+        </>
+    )
 };

@@ -7,7 +7,7 @@ import { Link } from '@aws-amplify/ui-react';
 
 const Home = () => {
     return (
-        <section id="intro">
+        <section id="home">
             <div className="introContent">
                 <span className="smallHeader">Hello,</span>
                 <span className="largeHeader">
