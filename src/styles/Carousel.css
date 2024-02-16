@@ -45,12 +45,6 @@
     right: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-    .arrow {
-        display: none;
-    }
-}
-
 .indicators {
     display: flex;
     position: absolute;
@@ -59,17 +53,18 @@
 
 .indicator {
     background-color: white;
-    height: 0.1rem;
+    height: 0.2rem;
     width: 1rem;
     border: none;
     outline: none;
     box-shadow: 0px 0px 5px #555;
     margin: 0rem 0.4rem;
     cursor: pointer;
+    border-radius: 1rem;
 }
 
 .indicator-inactive {
-    background-color: #0b5da6;
+    background-color: #041f38;
 }
 
 .author {
@@ -92,15 +87,27 @@
     font-size: small;
 }
 
-@media only screen and (max-width: 700px) {
-    .author-role {
-        padding-bottom: 1rem;
-    }
-}
-
 .quotation {
     color: white;
     size: auto;
     min-width: 10px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .carousel {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .arrow {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .author-role {
+        padding-bottom: 1rem;
+    }
+}

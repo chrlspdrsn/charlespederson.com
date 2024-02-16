@@ -3,6 +3,7 @@ import { Flex, View } from '@aws-amplify/ui-react';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill, BsQuote } from "react-icons/bs"
 
 import "../styles/Carousel.css"
+import { useSwipeable } from 'react-swipeable';
 
 export default function QuoteCarousel({ data }) {
     const [slide, setSlide] = useState(0);
@@ -37,11 +38,16 @@ export default function QuoteCarousel({ data }) {
         };
     }, [slide]);
 
+    const swipeHandler = useSwipeable({
+        onSwipedLeft: () => nextSlide(),
+        onSwipedRight: () => previousSlide()
+    });
+
     return (
-        <View className="carousel">
+        <View {...swipeHandler} className="carousel">
             <BsArrowLeftCircleFill className="arrow arrow-left" onClick={previousSlide}/>
                 {data.map((quote, index) =>
-                    <div className={slide === index ? "slide": "slide slide-hidden"}>
+                    <div className={slide === index ? "slide": "slide slide-hidden"} >
                         <Flex alignItems={'baseline'}>
                             <BsQuote className="quotation"/>
                             <p>{quote.detail}</p>
