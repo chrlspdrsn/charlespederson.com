@@ -9,13 +9,13 @@ const Home = () => {
     return (
         <section id="home">
             <div className="introContent">
-                <span className="smallHeader">Hello,</span>
+                <span className="smallHeader"><span className="mobileEmphasis">Hello,</span></span>
                 <span className="largeHeader">
-                    I'm <span className="emphasizedHeader">Charles</span><br/>Software Developer
+                    <span className="mobileEmphasis">I'm <span className="emphasizedHeader">Charles</span><br/>Software Developer</span>
                 </span>
                 <p className="introParagraph">
-                    Innovative. Passionate. Driven.
-                    </p>
+                    <span className="mobileEmphasis">Innovative. Passionate. Driven.</span>
+                </p>
                 <Link>
                     <button className="homeButton">
                         <img src={briefcase} alt="Icon of briefcase with link to hire" className="homeButtonImage" />
@@ -23,7 +23,6 @@ const Home = () => {
                     </button>
                 </Link>
             </div>
-            <img src={portrait} alt="A portrait of Charles Pederson" className="portraitImage"/>
         </section>
     )
 }

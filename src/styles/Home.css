@@ -1,19 +1,12 @@
 #home {
     height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 80%;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.portraitImage {
-    position: fixed;
-    top: 10%;
-    right: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: 100vh;
-    overflow: hidden;
+    background-image: url("../images/header.jpg");
+    background-position: 75% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .introContent {
@@ -60,10 +53,10 @@
 }
 
 @media screen and (max-width: 850px) {
-    .portraitImage {
-        right: -10vw;
+    .mobileEmphasis {
+        background: white;
+        border-radius:0.25rem;
     }
-
     .introContent {
         font-size: 10vw;
     }
@@ -75,16 +68,4 @@
     .largeHeader  {
         font-size: 2.5rem;
     }
-}
-@media screen and (max-width: 800px) {
-    .portraitImage {
-        top: 0;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .portraitImage {
-        right: -20vw;
-    }
-    
 }
