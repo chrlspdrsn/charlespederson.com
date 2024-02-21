@@ -2,12 +2,32 @@
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 65%;
+    max-width: 90%;
     padding: 0 1rem;
-    border: 2px;
-    border-style: solid;
-    border-color: white;
-    background-color: #041f38;
+}
+
+.timelineTitle {
+    padding-top: 1rem;
+}
+
+.timelineOrg {
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.timelineDot {
+    height: 2.25rem;
+    width: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white !important;
+}
+
+.timelineDotImage {
+    height: inherit;
+    width: inherit;
 }
 
 .resumeTitle {
@@ -18,43 +38,12 @@
     padding-bottom: 0.25rem;
 }
 
-.resumeSection {
-    padding-bottom: 0.75rem;
-}
-
-.resumeSubsection {
-    display: flex;
-    justify-content: space-between;
-}
-
-.resumeHeader {
-    text-align: left;
-    font-weight: 400;
-    font-size: 2.5rem;
-    padding: 0.5rem 0rem;
-    color: #0a9490;
-}
-
-.resumeSubhead {
-    font-weight: 250;
-    font-size: 2rem;
-}
-
-.resumeJobTitle {
-    font-weight: 200;
-    font-size: 1.75rem;
-}
-
-.skillsFlex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+/* #0a9490 */
 
 .resumePoint {
     font-size: 1rem;
-    list-style: circle;
-    margin-left: 1.25rem;
+    list-style: none;
+    margin-top: 0.5rem;
 }
 
 .resumeDescription {

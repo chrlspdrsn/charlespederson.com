@@ -1,0 +1,34 @@
+[
+    {
+        "year": "2023 to Present",
+        "org": "Liferay Inc.",
+        "jobTitle": "Software Engineering Consultant",
+        "content": "<ul class=\"resumeDescription\"><li class=\"resumePoint\">Develop more advanced and complex software systems using Java microservices such as RESTful Web Services and APIs, React, Docker, Oracle database and more</li><li class=\"resumePoint\">Thoroughly analyze software bugs using Linux to determine root causes of errors, including log analysis and debugging</li><li class=\"resumePoint\">Mentor and train associate consultants on best practices for software development, maintaining clean code, SDLC best practices and managing customer interactions and collaboration</li></ul>",
+        "highlightColor": "rgba(11, 93, 166, 0.5)",
+        "color": "rgb(11, 93, 166)"
+    },
+    {
+        "year": "2021-2022",
+        "org": "Liferay Inc.",
+        "jobTitle": "Associate Software Engineering Consultant",
+        "content": "<ul class=\"resumeDescription\"><li class=\"resumePoint\">Developed custom software solutions using Java and Java technologies such as JSP, MySQL, Jenkins and Git tailored to specific customer needs</li><li class=\"resumePoint\">Work alongside team of 20 in SDLC process using Agile development methodology ensuring strong communication, both written and verbal, internally and with customers</li><li class=\"resumePoint\">Design and test software solutions alongside other developers to ensure quality, dependable and readable code for purposes of scalability and performance</li></ul>",
+        "highlightColor": "rgba(11, 93, 166, 0.5)",
+        "color": "rgb(11, 93, 166)"
+    },
+    {
+        "year": "Summer 2021",
+        "org": "Liferay Inc.",
+        "jobTitle": "Software Engineering Intern",
+        "content": "<ul class=\"resumeDescription\"><li class=\"resumePoint\">Use Git, Java, JSP technology to develop efficient and high-quality code emphasizing web software and client-server communication</li><li class=\"resumePoint\">Learn industry standards for SDLC process as well as Agile development, software development best practices, and professionalism concepts</li><li class=\"resumePoint\">Shadow senior developers on a customer project and assist with code development that was used in final project for client</li></ul>",
+        "highlightColor": "rgba(11, 93, 166, 0.5)",
+        "color": "rgb(11, 93, 166)"
+    },
+    {
+        "year": "2017-2021",
+        "org": "Biola University",
+        "jobTitle": "Bachelor of Science in Computer Science",
+        "content": "<ul class=\"resumeDescription\"><li class=\"resumePoint\">I graduated Summa Cum Laude with a GPA of 3.92 in May 2021 with a Bachelors of Computer Science, each semester being named on the Dean's list</li><li class=\"resumePoint\">Completed additional Minors in Business Administration and Theological Studies, for a total of 60 additional units</li><li class=\"resumePoint\">While a student, I participated in a variety of extracurricular activities such as volunteering for on campus conferences, working as a Teachers Assistant, a RA and the Director of Administration for a student run organization. Additionally participated in intermural sports and other clubs</li></ul>",
+        "highlightColor": "rgba(207, 15, 39, 0.5)",
+        "color": "rgb(207, 15, 39)"
+    }
+]
