@@ -6,8 +6,22 @@
     padding: 0 1rem;
 }
 
+@media screen and (max-width: 1000px) {
+    #resume {
+        max-width: 95%;
+    }
+
+    .mobileHidden {
+        display: none;
+    }
+
+    .resumeTitle {
+        font-size: 2rem;
+    }
+}
+
 .timelineTitle {
-    padding-top: 1rem;
+    padding-top: 1.25rem;
 }
 
 .timelineOrg {
@@ -28,6 +42,15 @@
 .timelineDotImage {
     height: inherit;
     width: inherit;
+}
+
+.timelineHighlight {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.timelineYear {
+    margin-top: 0.5rem;
 }
 
 .resumeTitle {

@@ -1,5 +1,5 @@
 import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import liferayLogo from "../images/icons/liferay.png"
 import biolaLogo from "../images/icons/biola.jpg"
@@ -12,17 +12,19 @@ const ResumeItem = ( props ) => {
     let colorProp = props.color;
     let highlightColor = props.highlightColor;
 
+    const matches = useMediaQuery("(min-width: 1000px)")
+
     return (
         <TimelineItem>
-            
-                <TimelineOppositeContent 
-                    sx={{ margin: 'auto' }}
-                    variant="h5"
-                >
-                    <span style={{ background: highlightColor, borderRadius: '0.5rem', padding: '0.5rem'}}>
-                        {year}
-                    </span>
-                </TimelineOppositeContent>
+            <TimelineOppositeContent 
+                sx={{ margin: 'auto' }}
+                variant="h5"
+                className="mobileHidden"
+            >
+                <span className="timelineHighlight" style={{ background: highlightColor }} >
+                    {year}
+                </span>
+            </TimelineOppositeContent>
             <TimelineSeparator>
                 <TimelineConnector />
                     <TimelineDot className="timelineDot">
@@ -31,11 +33,19 @@ const ResumeItem = ( props ) => {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-                <Typography variant="h4" className="timelineTitle">
+                <Typography variant={ matches ? "h4" : "h5" } className="timelineTitle">
                     {jobTitle}
                 </Typography>
-                <Typography variant="h6">
+                <Typography variant={ matches ? "h6" : "" }>
                     <span className="timelineOrg" style={{ color: colorProp }}>{org}</span>
+                    { matches ? 
+                        <></> :
+                        <div className="timelineYear">
+                            <span className="timelineHighlight" style={{ background: highlightColor }}>
+                                {year}
+                            </span>
+                        </div>
+                    }
                 </Typography>
                 <Typography variant="body1">
                     <div dangerouslySetInnerHTML={{__html: content}}/>
