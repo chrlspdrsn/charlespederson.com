@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import '../styles/Projects.css'
 import profile from '../images/profile.jpg';
 import { Box, Fade, Modal } from "@mui/material";
-import project1 from "../json/project1.json";
+import project1 from "../data/project1.json";
 import { Flex } from "@aws-amplify/ui-react";
 
 const Projects = () => {

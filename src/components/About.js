@@ -1,10 +1,9 @@
 import { Card, Divider, Flex, Grid, Heading, Image, Text, View, useTheme } from '@aws-amplify/ui-react';
 import React from 'react';
 import QuoteCarousel from './QuoteCarousel';
-import quoteData from '../json/quotes.json';
-import mainContent from '../json/mainContent.json';
+import quoteData from '../data/quotes.json';
 import "../styles/About.css"
-import customer from "../images/icons/customer.png"
+import { mainContent } from '../data/mainContent';
 
 const About = () => {
     const {tokens} = useTheme();
@@ -17,12 +16,11 @@ const About = () => {
                 {mainContent.map((content, index) => {
                     return (
                         <div className="aboutBar">
-                            <img src={customer} alt={content.iconAlt} className="aboutImage"/>
+                            <img src={content.icon} alt={content.iconAlt} className="aboutImage"/>
                             <div className="aboutBarText">
                                 <h2 className="aboutSubTitle">{content.heading}</h2>
                                 <p className="aboutContent">
-                                    {content.first} <br/><br/>
-                                    {content.second}
+                                    <div dangerouslySetInnerHTML={{__html: content.content}}/>
                                 </p>
                             </div>
                         </div>

@@ -48,9 +48,10 @@
 
 .aboutImage {
     object-fit: cover;
-    height: 100%;
-    width: auto;
+    width: 10rem;
+    height: auto;
     margin-right: 2rem;
+    padding: 0.5rem;
 }
 
 .aboutBarText>p {
@@ -59,6 +60,10 @@
 }
 
 @media screen and (max-width: 1250px) {
+    #about {
+        max-width: 90%;
+    }
+
     .aboutBars {
         max-width: 85%;
     }
@@ -67,7 +72,8 @@
         margin: 0.5rem;
     }
     .aboutImage {
-        height: 7.5rem;
+        width: 7.5rem;
+        height: auto;
     }
     .aboutSubTitle {
         font-size: 2rem;

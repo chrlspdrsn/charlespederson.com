@@ -2,7 +2,7 @@ import { React, useEffect, useState } from "react";
 import { Timeline } from "@mui/lab";
 import '../styles/Resume.css'
 import ResumeItem from "./ResumeItem";
-import resumeItems from "../json/resumeItems.json"
+import resumeItems from "../data/resumeItems.json"
 import { useMediaQuery } from "@mui/material";
 
 const Resume = () => {
