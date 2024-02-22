@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Home.css';
-import portrait from "../images/header.jpg"
 import briefcase from "../images/icons/briefcase.png"
 
 import { Link } from '@aws-amplify/ui-react';

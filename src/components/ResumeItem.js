@@ -27,9 +27,11 @@ const ResumeItem = ( props ) => {
             </TimelineOppositeContent>
             <TimelineSeparator>
                 <TimelineConnector />
+                <a href={ org==="Liferay Inc." ? "https://www.liferay.com/" : "https://www.biola.edu/about"} target="_blank">
                     <TimelineDot className="timelineDot">
                         <img src={ org==="Liferay Inc." ? liferayLogo : biolaLogo } className="timelineDotImage" />
                     </TimelineDot>
+                </a>
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>

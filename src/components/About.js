@@ -1,4 +1,3 @@
-import { Card, Divider, Flex, Grid, Heading, Image, Text, View, useTheme } from '@aws-amplify/ui-react';
 import React from 'react';
 import QuoteCarousel from './QuoteCarousel';
 import quoteData from '../data/quotes.json';
@@ -6,8 +5,6 @@ import "../styles/About.css"
 import { mainContent } from '../data/mainContent';
 
 const About = () => {
-    const {tokens} = useTheme();
-
     return (
         <section id="about">
             <span className="aboutTitle">Who am I?</span>
