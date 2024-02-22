@@ -17,7 +17,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #0b5da6
+    color: #0b5da6;
+    margin-left: 2rem;
 }
 
 .smallHeader {
@@ -53,19 +54,40 @@
 }
 
 @media screen and (max-width: 850px) {
+    #home {
+        height: 100vh;
+    }
+
     .mobileEmphasis {
         background: white;
         border-radius:0.25rem;
     }
+
     .introContent {
+        margin-left: 0rem;
+        margin-top: 15vh;
         font-size: 10vw;
+        align-items: center;
     }
 
     .smallHeader {
-        font-size: 4.5vw;
+        font-size: 1rem;
     }
 
     .largeHeader  {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .introParagraph {
+        text-align: center;
+    }
+
+    .homeButton {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .homeButtonImage {
+        height: 1.5rem;
     }
 }
