@@ -15,12 +15,10 @@ const Home = () => {
                 <p className="introParagraph">
                     <span className="mobileEmphasis">Innovative. Passionate. Driven.</span>
                 </p>
-                <Link>
-                    <button className="homeButton">
-                        <img src={briefcase} alt="Icon of briefcase with link to hire" className="homeButtonImage" />
-                        Hire Me
-                    </button>
-                </Link>
+                <a href="https://www.linkedin.com/in/charpede/" target="_blank" className="homeButton">
+                    <img src={briefcase} alt="Icon of briefcase with link to hire" className="homeButtonImage" />
+                    Hire Me
+                </a>
             </div>
         </section>
     )

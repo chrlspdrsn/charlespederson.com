@@ -41,8 +41,7 @@ const Projects = () => {
                     handleOpen();
                 }}/>
            </div>
-           <button className="projectsButton">See More...</button>
-
+           <a href="https://github.com/chrlspdrsn" className="projectsButton" target="_blank">See More...</a>
 
            <Modal
                 open={open}
