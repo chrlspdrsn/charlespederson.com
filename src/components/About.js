@@ -19,6 +19,20 @@ const About = () => {
                                 <p className="aboutContent">
                                     <div dangerouslySetInnerHTML={{__html: content.content}}/>
                                 </p>
+                                {content.skills && <>
+                                    <h3 className="skillsTitle">Skills</h3>
+                                        {Array.isArray(content.skills) ? 
+                                            <div className="skillsLogos">
+                                                {content.skills.map((skill, index) => {
+                                                    return(
+                                                        <img src={skill.icon} alt={skill.alt} className="skillsLogoImg"/>
+                                                    )
+                                                })}
+                                            </div>
+                                        :
+                                        <div className="skillsText">{content.skills}<span className="skillsSpread" /></div>
+                                        }
+                                </>}
                             </div>
                         </div>
                     )
