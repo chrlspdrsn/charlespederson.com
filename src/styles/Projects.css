@@ -68,7 +68,7 @@
     transform: translate(-50%, -50%);
     width: 50vw;
     min-height: 25vh;
-    background-color: #0b5da6;
+    background-color: #08447a;
     border: 2px solid #041f38;
     border-radius: 2rem;
     animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
