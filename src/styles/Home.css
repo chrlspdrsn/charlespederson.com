@@ -52,8 +52,8 @@
 
 .homeButtonImage {
     object-fit: cover;
-    margin-right: 0.25rem;
-    height: 2rem;
+    margin-right: 0.5rem;
+    height: 1.5rem;
     width: auto;
 }
 
@@ -92,6 +92,6 @@
     }
 
     .homeButtonImage {
-        height: 1.5rem;
+        height: 1rem;
     }
 }

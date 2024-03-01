@@ -1,8 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
-import briefcase from "../images/icons/briefcase.png"
-
-import { Link } from '@aws-amplify/ui-react';
+import linkedInIcon from "../images/icons/linkedInLogo.png"
 
 const Home = () => {
     return (
@@ -16,8 +14,8 @@ const Home = () => {
                     <span className="mobileEmphasis">Innovative. Passionate. Driven.</span>
                 </p>
                 <a href="https://www.linkedin.com/in/charpede/" target="_blank" className="homeButton">
-                    <img src={briefcase} alt="Icon of briefcase with link to hire" className="homeButtonImage" />
-                    Hire Me
+                    <img src={linkedInIcon} alt="LinkedIn Logo" className="homeButtonImage" />
+                    Connect with Me
                 </a>
             </div>
         </section>
