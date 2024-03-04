@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import "../styles/Contact.css";
+import FadeIn from "../animations/FadeIn";
 
 const Contact = () => {
     const form = useRef();
@@ -24,15 +25,17 @@ const Contact = () => {
 
     return (
         <div id="contact">
-            <h1 className="contactPageTitle">Contact Me</h1>
-            <span className="contactDescription">Use the form below to contact me directly.</span>
-            <form className="contactForm" ref={form} onSubmit={sendEmail}>
-                <input className="name" type="text" placeholder="Your Name" name="from_name" required />
-                <input className="email" type="email" placeholder="Your Email" name="from_email" required />
-                <textarea className="message" rows="5" placeholder="Your Message" name="message" required />
-                <ReCAPTCHA className="captcha" sitekey="6LeKvoYpAAAAABJPIdoeYtv-bky42KKMnOADAHIu" aria-required />
-                <button className="submitButton" type="submit" value="Send">Submit</button>
-            </form>
+            <FadeIn>
+                <h1 className="contactPageTitle">Contact Me</h1>
+                <div className="contactDescription">Use the form below to contact me directly.</div>
+                <form className="contactForm" ref={form} onSubmit={sendEmail}>
+                    <input className="name" type="text" placeholder="Your Name" name="from_name" required />
+                    <input className="email" type="email" placeholder="Your Email" name="from_email" required />
+                    <textarea className="message" rows="5" placeholder="Your Message" name="message" required />
+                    <ReCAPTCHA className="captcha" sitekey="6LeKvoYpAAAAABJPIdoeYtv-bky42KKMnOADAHIu" aria-required />
+                    <button className="submitButton" type="submit" value="Send">Submit</button>
+                </form>
+            </FadeIn>
         </div>
     )
 }

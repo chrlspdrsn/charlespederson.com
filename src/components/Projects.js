@@ -4,6 +4,8 @@ import profile from '../images/profile.jpg';
 import { Box, Fade, Modal } from "@mui/material";
 import project1 from "../data/project1.json";
 import { Flex } from "@aws-amplify/ui-react";
+import Reveal from "../animations/Reveal";
+import FadeIn from "../animations/FadeIn";
 
 const Projects = () => {
     const [open, setOpen] = useState(false);
@@ -13,28 +15,33 @@ const Projects = () => {
 
     return(
         <section id="projects">
-            <h2 className="projectsTitle">My Projects</h2>
-            <span className="projectsDesc">The following projects demonstrate a range of skills and technologies I've used throughout my career.</span>
-            <div className="projectImages">
-                <img src={profile} alt="Charles Pederson" className="projectImage" onClick={() => {
-                    setActiveProject(project1);
-                    handleOpen();
-                }}/>
-                <img src={profile} alt="Charles Pederson" className="projectImage" onClick={() => {
-                    setActiveProject(project1);
-                    handleOpen();
-                }} />
-                <img src={profile} alt="Charles Pederson" className="projectImage" onClick={() => {
-                    setActiveProject(project1);
-                    handleOpen();
-                }} />
-                <img src={profile} alt="Charles Pederson" className="projectImage" onClick={() => {
-                    setActiveProject(project1);
-                    handleOpen();
-                }}/>
-           </div>
-           <a href="https://github.com/chrlspdrsn" className="projectsButton" target="_blank">See More...</a>
+            <FadeIn duration="1" delay="0">
+                <h2 className="projectsTitle">My Projects</h2>
+                <span className="projectsDesc">The following projects demonstrate a range of skills and technologies I've used throughout my career.</span>
+            </FadeIn>
+            <Reveal>
+                <div className="projectImages">
+                    <img src={profile} alt="Charles Pederson" className="projectImage" onClick={() => {
+                        setActiveProject(project1);
+                        handleOpen();
+                    }}/>
+                    <img src={profile} alt="Charles Pederson" className="projectImage" onClick={() => {
+                        setActiveProject(project1);
+                        handleOpen();
+                    }} />
+                    <img src={profile} alt="Charles Pederson" className="projectImage" onClick={() => {
+                        setActiveProject(project1);
+                        handleOpen();
+                    }} />
+                    <img src={profile} alt="Charles Pederson" className="projectImage" onClick={() => {
+                        setActiveProject(project1);
+                        handleOpen();
+                    }}/>
+            </div>
+           </Reveal>
 
+            <a href="https://github.com/chrlspdrsn" className="projectsButton" target="_blank">See More...</a>
+           
            <Modal
                 open={open}
                 aria-labelledby="modal-modal-title"

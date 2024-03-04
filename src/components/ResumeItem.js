@@ -3,6 +3,7 @@ import { Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import liferayLogo from "../images/icons/liferay.png"
 import biolaLogo from "../images/icons/biola.jpg"
+import Reveal from "../animations/Reveal";
 
 const ResumeItem = ( props ) => {
     let year = props.year;
@@ -35,6 +36,7 @@ const ResumeItem = ( props ) => {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
+                <Reveal>
                 <Typography variant={ matches ? "h4" : "h5" } className="timelineTitle">
                     {jobTitle}
                 </Typography>
@@ -52,6 +54,7 @@ const ResumeItem = ( props ) => {
                 <Typography variant="body1">
                     <div dangerouslySetInnerHTML={{__html: content}}/>
                 </Typography>
+                </Reveal>
             </TimelineContent>
         </TimelineItem>
     )

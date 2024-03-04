@@ -59,6 +59,12 @@
     margin: 1rem 0;
     text-decoration: none;
     color: black;
+    opacity: 75%;
+}
+
+.projectsButton:hover {
+    opacity: 100%;
+    transition: opacity 0.5s;
 }
 
 .modalBox {
@@ -159,5 +165,9 @@
     .technologyItem {
         font-weight: 250;
         font-size: 1rem;
+    }
+
+    .projectsButton {
+        opacity: 100%;
     }
 }

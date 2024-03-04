@@ -1,0 +1,15 @@
+.reveal {
+    position: relative;
+    width: fit-content;
+}
+
+.revealScreen {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    right: 0px;
+    left: 0px;
+    background: rgba(4, 31, 56, 0.75);
+    border-radius: 0.5rem;
+    z-index: 20;
+}
