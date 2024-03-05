@@ -8,26 +8,24 @@ const Home = () => {
         <section id="home">
             <div className="introContent">
                 <Reveal>
-                    <span className="smallHeader"><span className="mobileEmphasis">Hello,</span></span>
+                    <span className="smallHeader">Hello,</span>
                 </Reveal>
                 <Reveal>
                     <div className="mobileCenter">
                         <span className="largeHeader">
-                            <span className="mobileEmphasis">
-                                I'm <span className="emphasizedHeader">Charles</span><br/>
-                                Software Developer
-                            </span>
+                            I'm <span className="emphasizedHeader">Charles</span><br/>
+                            Software Developer
                         </span>
                     </div>
                 </Reveal>
                 <Reveal>
-                    <p className="introParagraph">
-                        <span className="mobileEmphasis">Innovative. Passionate. Driven.</span>
-                    </p>
-                    <a href="https://www.linkedin.com/in/charpede/" target="_blank" className="homeButton">
-                        <img src={linkedInIcon} alt="LinkedIn Logo" className="homeButtonImage" />
-                        Connect with Me
-                    </a>
+                    <div className="additionalContent">
+                        <p className="introParagraph">Innovative. Passionate. Driven.</p>
+                        <a href="https://www.linkedin.com/in/charpede/" target="_blank" className="homeButton">
+                            <img src={linkedInIcon} alt="LinkedIn Logo" className="homeButtonImage" />
+                            Connect with Me
+                        </a>
+                    </div>
                 </Reveal>
             </div>
         </section>

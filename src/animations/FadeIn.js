@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import "./Animations.css";
 
-const FadeIn = ({ children, width="fit-content", duration=1.25, delay=0.5 }) => {
+const FadeIn = ({ children, duration=1.25, delay=0.5 }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
